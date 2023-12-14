@@ -32,3 +32,8 @@ console.log(listaDeCompras);
 // Editando o valor de uma chave
 listaDeCompras["item3"] = "peixe";
 console.log(listaDeCompras);
+
+
+// comparando valores
+// no js só é possivel comparar se buscarmos o valor de uma objeto
+console.log({}.value === {}.value);
