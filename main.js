@@ -47,9 +47,10 @@ function mostrarItens() {
 
   inputsCheck.forEach((i) => {
     i.addEventListener("click", (evento) => {
-      console.log(
-        evento.target.parentElement.parentElement.getAttribute("data-value")
-      );
+      const valorDoElemento =
+        evento.target.parentElement.parentElement.getAttribute("data-value");
+      listaDeItens[valorDoElemento].checar = evento.target.checked;
+      console.log(listaDeItens[valorDoElemento].checar);
     });
   });
 }
