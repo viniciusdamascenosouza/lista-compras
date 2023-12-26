@@ -69,4 +69,15 @@ function mostrarItens() {
       mostrarItens();
     });
   });
+
+  const deletarObjetos = document.querySelectorAll(".deletar");
+
+  deletarObjetos.forEach((i) => {
+    i.addEventListener("click", (evento) => {
+      const valorDoElemento =
+        evento.target.parentElement.parentElement.getAttribute("data-value");
+      listaDeItens.splice(valorDoElemento, 1);
+      mostrarItens();
+    });
+  });
 }
