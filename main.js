@@ -102,4 +102,8 @@ function salvarEdicao() {
     `[data-value="${itemAEditar}"] input[type="text"]`
   );
   console.log(itemEditado.value);
+    listaDeItens[itemAEditar].valor = itemEditado.value;
+    console.log(listaDeItens)
+    itemAEditar =  -1;
+    mostrarItens();
 }
